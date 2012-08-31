@@ -69,7 +69,7 @@ module HomeHelper
 			html = '<div style="float:right;">'
 			html+=	link_to image_edit, "javascript:;", :onclick => "show_edit_post(#{id})"
 			html+= " "
-    		html+=	link_to image_delete), delete_post_path(id), :onclick => "return confirm('Are you sure ?')"
+    		html+=	link_to image_delete, delete_post_path(id), :onclick => "return confirm('Are you sure ?')"
     		html+=  '</div>'
 		end
 		raw html
