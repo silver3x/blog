@@ -2,7 +2,7 @@ module UserHelper
 	def signup_error
 		if !@new_user.errors.empty? 
 			html = '<div class="alert alert-error fade in">'
-		    html += '	<button type="button" class="close" data-dismiss="alert">×</button>'
+		    html += '	<button type="button" class="close" data-dismiss="alert">x</button>'
 		    html += '	Errors :'
 		    html += '	<ul>'
 				@new_user.errors.each do |e| 
@@ -25,7 +25,7 @@ module UserHelper
 	def login_error 
 		if !flash[:error].nil?
 			html = '<div class="alert alert-error fade in">'
-		    html += '<button type="button" class="close" data-dismiss="alert">×</button>'
+		    html += '<button type="button" class="close" data-dismiss="alert">x</button>'
 		    html += flash[:error]
 		    html += '</div>'
 		end
@@ -43,7 +43,7 @@ module UserHelper
 	def profile_error
 		if !@user.errors.empty? 
 			html = '<div class="alert alert-error fade in">'
-		    html += '	<button type="button" class="close" data-dismiss="alert">×</button>'
+		    html += '	<button type="button" class="close" data-dismiss="alert">x</button>'
 		    html += '	Errors :'
 		    html += '	<ul>'
 				@user.errors.each do |e| 
@@ -53,12 +53,12 @@ module UserHelper
 		    html += '</div>'
 		elsif !flash[:success].nil?
 			html = '<div class="alert alert-success fade in">'
-		    html += '	<button type="button" class="close" data-dismiss="alert">×</button>'
+		    html += '	<button type="button" class="close" data-dismiss="alert">x</button>'
 		    html += flash[:success]
 		    html += '</div>'
 		elsif !flash[:warning].nil?
 			html = '<div class="alert alert-warning fade in">'
-		    html += '	<button type="button" class="close" data-dismiss="alert">×</button>'
+		    html += '	<button type="button" class="close" data-dismiss="alert">x</button>'
 		    html += flash[:warning]
 		    html += '</div>'
 		end

@@ -11,7 +11,7 @@ module PostHelper
 		    html += '</div>'
 		elsif !flash[:post_success].nil?
 			html = '<div class="alert alert-success fade in">'
-		    html += '	<button type="button" class="close" data-dismiss="alert">×</button>'
+		    html += '	<button type="button" class="close" data-dismiss="alert">x</button>'
 		    html += flash[:post_success]
 		    html += '</div>'
 		end
