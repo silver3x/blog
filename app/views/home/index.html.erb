@@ -4,7 +4,7 @@
 <div class="row-fluid">
     <div class="span12 well">
     	<div class="span1">
-	    	<%= image_tag post.user.avatar,:onerror => "this.src='/data/no-image.jpg'", :class => "img-polaroid", :width => "100%" %>
+	    	<%= image_tag show_avatar (post.user.avatar),:onerror => "this.src='/data/no-image.jpg'", :class => "img-polaroid", :width => "100%" %>
 	    </div>
     	<div class="span11">
     		<%= this_owner? (post.user.username,post.post_id) %>
@@ -20,7 +20,7 @@
 	    <div class="row-fluid">
 		    <div class="span12 well" style="background-color: #E6E6E6;margin:0;">
 		    	<div class="span1">
-			    	<%= image_tag comment.user.avatar,:onerror => "this.src='/data/no-image.jpg'", :class => "img-polaroid", :width => "100%" %>
+			    	<%= image_tag show_avatar (comment.user.avatar),:onerror => "this.src='/data/no-image.jpg'", :class => "img-polaroid", :width => "100%" %>
 			    </div>
 		    	<div class="span11">
 		    		    <div class="btn-group" style="float:right;">
