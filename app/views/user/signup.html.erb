@@ -1,0 +1,35 @@
+	<%= render :partial =>"home/breadcrum", :locals => { :current_page => @title} %>
+	<h2>Register</h2>
+
+	<%= signup_error %>
+
+    <%= form_for @new_user, :url => signup_path, :html => { :class => "form-horizontal" } do |f| %>
+	    <div  <%= status_input(:username) %> >
+		    <label class="control-label" for="inputEmail">Email</label>
+		    <div class="controls">
+		    	<%= f.text_field :username,  :id => "inputEmail", :placeholder => "Email"  %>
+		    </div>
+	    </div>
+	    <div <%= status_input(:password) %> >
+		    <label class="control-label" for="inputPassword">Password</label>
+		    <div class="controls">
+		    	<%= f.text_field :password,  :id => "inputPassword", :placeholder => "Password", :type => "password"  %>
+		    </div>
+	    </div>
+	    <div <%= status_input(:password_confirmation) %> >
+		    <label class="control-label" for="inputPassword">Re-Password</label>
+		    <div class="controls">
+		    	<%= f.text_field :password_confirmation,  :id => "inputPassword", :placeholder => "Re-Password", :type => "password"  %>
+		    </div>
+	    </div>
+	    <div class="control-group">
+		    <div class="controls">
+		    <button type="submit" class="btn">Register Now</button>
+		    </div>
+	    </div>
+    <% end %>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		$(".alert").alert();
+		});
+    </script>

@@ -1,0 +1,15 @@
+<%= image_tag show_avatar(avatar),:onerror => "this.src='/data/no-image.jpg'", :class => "img-polaroid", :width => "97%" %><br/>
+<br/>
+
+<%= form_for @new_post, :url => new_post_path do |f| %>
+<%= f.text_area :content, :placeholder => "What's on your mind ?", :rows => "3", :style => "width:95%", :maxlength => "500" %>
+<%= hidden_field_tag "current_path", request.fullpath %>
+<%= post_error %>
+<button class="btn btn-large btn-block btn-primary" type="button" onclick="post_comment()">Post</button>
+<% end %>
+<script type="text/javascript">
+	function post_comment(){
+		if($("#post_content").val()!="")
+			$("#new_post").submit();
+	}
+</script>
