@@ -65,9 +65,9 @@ module HomeHelper
 	def this_owner? (username,id)
 		if session[:login] == username
 			html = '<div style="float:right;">'
-			html+=	link_to ((image_tag "/images/edit.png", :width => "20"), "javascript:;", :onclick => "show_edit_post(#{id})") 
+			html+=	link_to (image_tag ("/images/edit.png", :width => "20"), "javascript:;", :onclick => "show_edit_post(#{id})") 
 			html+= " "
-    		html+=	link_to ((image_tag "/images/delete.png", :width => "20"), delete_post_path(id), :onclick => "return confirm('Are you sure ?')")
+    		html+=	link_to (image_tag ("/images/delete.png", :width => "20"), delete_post_path(id), :onclick => "return confirm('Are you sure ?')")
     		html+=  '</div>'
 		end
 		raw html
