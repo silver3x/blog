@@ -1,5 +1,5 @@
 module HomeHelper
-	def set_active (page, current)
+	def set_active(page, current)
 		if page == current
 			"class='active'"
 		end
@@ -16,16 +16,16 @@ module HomeHelper
 	def set_header
 		if session[:login].nil?
 			html = '<ul class="nav">'
-			html+='	<li  #{set_active ("home",@page)} >'
+			html+= "<li  #{set_active('home',@page)} >"
 			html+=	link_to "Home", root_path 
 			html+=	"</li>"
-			html+=	'<li #{set_active ("signup",@page)} >'
+			html+=	"<li #{set_active('signup',@page)} >"
 			html+=	link_to "Sign Up", signup_path
 			html+=	"</li>"
 			html+=	"</ul>"
 		else
 			html = '<ul class="nav">'
-			html+= '<li  #{set_active ("home",@page)} >'
+			html+= "<li  #{set_active('home',@page)} >"
 			html+=	link_to "Home", root_path 
 			html+=	"</li>"
 			html+=	"</ul>"

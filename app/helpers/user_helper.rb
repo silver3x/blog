@@ -14,7 +14,7 @@ module UserHelper
 		raw html
 	end
 
-	def status_input (current)
+	def status_input(current)
 		if !@new_user.errors[current].empty?
 			raw 'class="control-group error"'
 		else
@@ -32,7 +32,7 @@ module UserHelper
 		raw html
 	end
 
-	def show_avatar (avatar)
+	def show_avatar(avatar)
 		if avatar.nil?
 			"#"
 		else

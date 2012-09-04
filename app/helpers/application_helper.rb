@@ -1,5 +1,5 @@
 module ApplicationHelper
-	def show_title (title)
+	def show_title(title)
 		if title.nil? 
 			"Blog Sunflower"
 		else  
