@@ -7,11 +7,11 @@
 	    	<%= image_tag show_avatar (post.user.avatar),:onerror => "this.src='/data/no-image.jpg'", :class => "img-polaroid", :width => "100%" %>
 	    </div>
     	<div class="span11">
-    		<%= this_owner? (post.user.username,post.post_id) %>
+    		<%= this_owner? (post.user.username, post.post_id) %>
     		<strong><%= post.user.username %></strong><br/>
 	    	<span id="content_<%= post.post_id %>"><%= post.content %></span>
 	    	<div style="clear:both;"></div>
-	    	<%= show_date (post.created_at, post.updated_at,post.post_id) %>
+	    	<%= show_date (post.created_at, post.updated_at, post.post_id) %>
 	    </div>
 	    <div style="clear:both;"></div>
 	    <h6>Comment :</h6>
