@@ -4,14 +4,14 @@
 <div class="row-fluid">
     <div class="span12 well">
     	<div class="span1">
-	    	<%= image_tag show_avatar (post.user.avatar),:onerror => "this.src='/data/no-image.jpg'", :class => "img-polaroid", :width => "100%" %>
+	    	<%= image_tag show_avatar(post.user.avatar),:onerror => "this.src='/data/no-image.jpg'", :class => "img-polaroid", :width => "100%" %>
 	    </div>
     	<div class="span11">
-    		<%= this_owner? (post.user.username, post.post_id) %>
+    		<%= this_owner?(post.user.username, post.post_id) %>
     		<strong><%= post.user.username %></strong><br/>
 	    	<span id="content_<%= post.post_id %>"><%= post.content %></span>
 	    	<div style="clear:both;"></div>
-	    	<%= show_date (post.created_at, post.updated_at, post.post_id) %>
+	    	<%= show_date(post.created_at, post.updated_at, post.post_id) %>
 	    </div>
 	    <div style="clear:both;"></div>
 	    <h6>Comment :</h6>
@@ -20,7 +20,7 @@
 	    <div class="row-fluid">
 		    <div class="span12 well" style="background-color: #E6E6E6;margin:0;">
 		    	<div class="span1">
-			    	<%= image_tag show_avatar (comment.user.avatar),:onerror => "this.src='/data/no-image.jpg'", :class => "img-polaroid", :width => "100%" %>
+			    	<%= image_tag show_avatar(comment.user.avatar),:onerror => "this.src='/data/no-image.jpg'", :class => "img-polaroid", :width => "100%" %>
 			    </div>
 		    	<div class="span11">
 		    		    <div class="btn-group" style="float:right;">
@@ -29,7 +29,7 @@
 		    		<strong><%= comment.user.username %></strong><br/>
 			    	<span id="content_<%= post.post_id %>"><%= comment.content %></span>
 			    	<div style="clear:both;"></div>
-			    	 <i style="float:right;font-size:10px;">( <%= change_date (comment.created_at) %> )</i>
+			    	 <i style="float:right;font-size:10px;">( <%= change_date(comment.created_at) %> )</i>
 			    </div>
 		    </div>
 		</div>
