@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
 	attr_accessor :tmp
 	self.primary_key = :user_id
 	has_many :post
-	has_many :comment, :through => :post
+	has_many :comment
 	validates_confirmation_of :password, :message => 'Password doesn\'t match !', :if => :not_update_profile?
 	validates_presence_of :password_confirmation, :message => 'Re-password is blank !', :if => :not_update_profile?
 	validates_presence_of :username, :message => 'Email is blank !', :on => :create
