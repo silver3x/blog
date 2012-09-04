@@ -1,0 +1,77 @@
+10
+
+dir
+13
+https://blog-rails-yic.googlecode.com/svn/test
+https://blog-rails-yic.googlecode.com/svn
+
+
+
+2012-09-04T01:47:58.366811Z
+2
+hieu.huynhtrong90@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a31da78b-3d49-c23a-2310-5680418c1f1e
+
+unit
+dir
+
+test_helper.rb
+file
+
+
+
+
+2012-08-28T03:33:40.000000Z
+2b8130eb4e1a65bce16e6e0fbe90d447
+2012-09-04T01:47:58.366811Z
+2
+hieu.huynhtrong90@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+454
+
+performance
+dir
+
+functional
+dir
+
+integration
+dir
+
+fixtures
+dir
+

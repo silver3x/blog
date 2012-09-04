@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/2/app/views/user
+END
+signup.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2/app/views/user/signup.html.erb
+END
+_login.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2/app/views/user/_login.html.erb
+END
+logout.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2/app/views/user/logout.html.erb
+END
+_info.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/app/views/user/_info.html.erb
+END
+profile.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/14/app/views/user/profile.html.erb
+END
