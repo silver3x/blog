@@ -23,6 +23,10 @@ class CreateDatabase < ActiveRecord::Migration
       t.string  "avatar"
       t.integer "user_type",               :default => 0
     end
+
+    exec <<SQL
+    insert into USER (user_type, username, password) VALUES (1,"admin@yahoo.com","4297f44b13955235245b2497399d7a93")
+SQL
   end
 
   def self.down
