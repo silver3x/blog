@@ -25,7 +25,7 @@ class CreateDatabase < ActiveRecord::Migration
     end
 
     execute <<-SQL
-    INSERT INTO user (user_type, username, password) VALUES (1,"admin@yahoo.com","4297f44b13955235245b2497399d7a93")
+    INSERT INTO "user" ("user_type", "username", "password") VALUES (1,'admin@yahoo.com','4297f44b13955235245b2497399d7a93')
 SQL
   end
 
